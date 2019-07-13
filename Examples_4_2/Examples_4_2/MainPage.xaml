@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="Examples_4_2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Examples_4_2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel x:Name="stackPanel">
+            <!--简单的TextBlock-->
+            <TextBlock x:Name="TextBlock2" FontSize="20" Height="30" Text="TextBlock控件" Foreground="Red"/>
+            <!--同一个控件中不同内容设置不同样式-->
+            <TextBlock FontSize="20">
+                <TextBlock.Inlines>
+                    <Run FontWeight="Bold" FontSize="14" Text="TextBlock. "/>
+                    <Run FontStyle="Italic" Foreground="Red" Text="red test. "/>
+                    <Run FontStyle="Italic" FontSize="18" Text="linear gradient text.">
+                        <Run.Foreground>
+                            <LinearGradientBrush>
+                                <GradientStop Color="Green" Offset="0.0"/>
+                                <GradientStop Color="Purple" Offset="0.25"/>
+                                <GradientStop Color="Orange" Offset="0.5"/>
+                                <GradientStop Color="Blue" Offset="0.75"/>
+                            </LinearGradientBrush>
+                        </Run.Foreground>
+                    </Run>
+                    <Run FontStyle="Italic" Foreground="Green" Text=" green"/>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <!--LineBreak设置控件拆行-->
+            <TextBlock FontSize="20">
+                你好！
+                <LineBreak/>
+                TextBlock
+                <LineBreak/>
+                再见
+                <LineBreak/>
+                --2019-07-13
+            </TextBlock>
+            <!--设置控件自动拆行-->
+            <TextBlock TextWrapping="Wrap" FontSize="30">
+                内容好长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长
+            </TextBlock>
+            <!--不设置自动拆行-->
+            <TextBlock FontSize="20">
+                内容好长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长
+            </TextBlock>
+            <!--设置颜色渐变-->
+            <TextBlock Text="颜色变化化化化化化化化化化化化化" FontSize="30">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#FF0000FF" Offset="0.0"/>
+                        <GradientStop Color="#FFEEEEEE" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>
