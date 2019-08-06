@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Examples_4_12.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Examples_4_12"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TimePicker x:Name="time" Header="请选择时间：" TimeChanged="time_TimeChanged"/>
+            <DatePicker x:Name="date" Header="请选择日期：" DateChanged="date_DateChanged"/>
+            <TextBlock x:Name="info" FontSize="20" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Page>
