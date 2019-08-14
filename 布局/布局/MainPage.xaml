@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="布局.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:布局"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Pivot Title="布局管理">
+            <PivotItem Header="长度属性">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Margin="10 20 30 40">
+                        <TextBlock x:Name="info" MaxWidth="350" Text="你好" FontSize="30"/>
+                        <TextBlock Text="你好" FontSize="30"/>
+                    </StackPanel>
+                    <TextBox TextChanged="TextBox_TextChanged"></TextBox>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="排列属性">
+                <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                    <TextBlock Text="左上方" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <TextBlock Text="中上方" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                    <TextBlock Text="右上方" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+                    <TextBlock Text="左中心" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    <TextBlock Text="中心" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBlock Text="右中心" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                    <TextBlock Text="左下方" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                    <TextBlock Text="中下方" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+                    <TextBlock Text="右下方" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+                </Grid>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
