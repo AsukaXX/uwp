@@ -32,6 +32,58 @@
                     <TextBlock Text="右下方" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
                 </Grid>
             </PivotItem>
+            <PivotItem Header="Grid">
+                <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="63*"/>
+                        <RowDefinition Height="170*"/>
+                        <RowDefinition Height="119*"/>
+                        <RowDefinition Height="117*"/>
+                        <RowDefinition Height="119*"/>
+                        <RowDefinition Height="117*"/>
+                    </Grid.RowDefinitions>
+                    <Button x:Name="B7" Click="Digitbtn_Click" Grid.Column="0" Grid.Row="2" Content="7" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="B8" Click="Digitbtn_Click" Grid.Column="1" Grid.Row="2" Content="8" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="B9" Click="Digitbtn_Click" Grid.Column="2" Grid.Row="2" Content="9" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="B4" Click="Digitbtn_Click" Grid.Column="0" Grid.Row="3" Content="4" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="B5" Click="Digitbtn_Click" Grid.Column="1" Grid.Row="3" Content="5" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="B6" Click="Digitbtn_Click" Grid.Column="2" Grid.Row="3" Content="6" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="B1" Click="Digitbtn_Click" Grid.Column="0" Grid.Row="4" Content="1" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="B2" Click="Digitbtn_Click" Grid.Column="1" Grid.Row="4" Content="2" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="B3" Click="Digitbtn_Click" Grid.Column="2" Grid.Row="4" Content="3" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="B0" Click="Digitbtn_Click" Grid.Column="0" Grid.Row="5" Content="0" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="Plus" Click="OperationBtn_Click" Grid.Column="3" Grid.Row="2" Content="+" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="Minus" Click="OperationBtn_Click" Grid.Column="3" Grid.Row="3" Content="-" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="Multiply" Click="OperationBtn_Click" Grid.Column="3" Grid.Row="4" Content="*" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="Divide" Click="OperationBtn_Click" Grid.Column="3" Grid.Row="5" Content="/" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="Del" Click="Del_Click" Grid.Column="2" Grid.Row="5" Content="删除" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <Button x:Name="Result" Click="Result_Click" Grid.Column="1" Grid.Row="5" Content="=" HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch" Margin="2"/>
+                    <TextBlock x:Name="OperatinResult" FontSize="40" Grid.Row="1" Margin="0 10 10 0" Grid.ColumnSpan="4" HorizontalAlignment="Right"/>
+                    <TextBlock x:Name="InpuInformation" FontSize="40" Grid.Row="0" Margin="0 10 10 0" Grid.ColumnSpan="4" HorizontalAlignment="Right"/>
+                </Grid>
+            </PivotItem>
         </Pivot>
     </Grid>
 </Page>
